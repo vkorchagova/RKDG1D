@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="RKDG-1D.cpp" />
+    <ClCompile Include="Boundary.cpp">
+      <Filter>Boundaries</Filter>
+    </ClCompile>
+    <ClCompile Include="BoundaryPeriodic.cpp">
+      <Filter>Boundaries</Filter>
+    </ClCompile>
+    <ClCompile Include="Flux.cpp">
+      <Filter>Fluxes</Filter>
+    </ClCompile>
+    <ClCompile Include="FluxGodunovType.cpp">
+      <Filter>Fluxes</Filter>
+    </ClCompile>
+    <ClCompile Include="FluxHLLC.cpp">
+      <Filter>Fluxes</Filter>
+    </ClCompile>
+    <ClCompile Include="LimiterFinDiff.cpp">
+      <Filter>Limiters</Filter>
+    </ClCompile>
+    <ClCompile Include="Limiter.cpp">
+      <Filter>Limiters</Filter>
+    </ClCompile>
+    <ClCompile Include="IndicatorEverywhere.cpp">
+      <Filter>Indicators</Filter>
+    </ClCompile>
+    <ClCompile Include="IndicatorNowhere.cpp">
+      <Filter>Indicators</Filter>
+    </ClCompile>
+    <ClCompile Include="Indicator.cpp">
+      <Filter>Indicators</Filter>
+    </ClCompile>
+    <ClCompile Include="Timestep.cpp">
+      <Filter>Timesteps</Filter>
+    </ClCompile>
+    <ClCompile Include="TimestepEuler.cpp">
+      <Filter>Timesteps</Filter>
+    </ClCompile>
+    <ClCompile Include="TimestepRK2.cpp">
+      <Filter>Timesteps</Filter>
+    </ClCompile>
+    <ClCompile Include="TimestepRK2TVD.cpp">
+      <Filter>Timesteps</Filter>
+    </ClCompile>
+    <ClCompile Include="defs.cpp">
+      <Filter>KERNEL</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh1D.cpp">
+      <Filter>KERNEL</Filter>
+    </ClCompile>
+    <ClCompile Include="BoundaryWall.cpp">
+      <Filter>Boundaries</Filter>
+    </ClCompile>
+    <ClCompile Include="Params.cpp">
+      <Filter>PARAMS</Filter>
+    </ClCompile>
+    <ClCompile Include="BoundarySoft.cpp">
+      <Filter>Boundaries</Filter>
+    </ClCompile>
+    <ClCompile Include="Problem.cpp">
+      <Filter>Problems</Filter>
+    </ClCompile>
+    <ClCompile Include="ProblemGas1D.cpp">
+      <Filter>Problems</Filter>
+    </ClCompile>
+    <ClCompile Include="ProblemTransfer1D.cpp">
+      <Filter>Problems</Filter>
+    </ClCompile>
+    <ClCompile Include="TimestepRK3TVD.cpp">
+      <Filter>Timesteps</Filter>
+    </ClCompile>
+    <ClCompile Include="IndicatorKrivodonova.cpp">
+      <Filter>Indicators</Filter>
+    </ClCompile>
+    <ClCompile Include="LimiterWENO.cpp">
+      <Filter>Limiters</Filter>
+    </ClCompile>
+    <ClCompile Include="LimiterWENO_S.cpp">
+      <Filter>Limiters</Filter>
+    </ClCompile>
+    <ClCompile Include="FluxLaxFriedrichs.cpp">
+      <Filter>Fluxes</Filter>
+    </ClCompile>
+    <ClCompile Include="LimiterHWENO_SC.cpp">
+      <Filter>Limiters</Filter>
+    </ClCompile>
+    <ClCompile Include="LimiterHWENO_SC_Char.cpp">
+      <Filter>Limiters</Filter>
+    </ClCompile>
+    <ClCompile Include="ProblemMHD1D.cpp">
+      <Filter>Problems</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Boundary.h">
+      <Filter>Boundaries</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundaryPeriodic.h">
+      <Filter>Boundaries</Filter>
+    </ClInclude>
+    <ClInclude Include="Flux.h">
+      <Filter>Fluxes</Filter>
+    </ClInclude>
+    <ClInclude Include="FluxGodunovType.h">
+      <Filter>Fluxes</Filter>
+    </ClInclude>
+    <ClInclude Include="FluxHLLC.h">
+      <Filter>Fluxes</Filter>
+    </ClInclude>
+    <ClInclude Include="LimiterFinDiff.h">
+      <Filter>Limiters</Filter>
+    </ClInclude>
+    <ClInclude Include="Limiter.h">
+      <Filter>Limiters</Filter>
+    </ClInclude>
+    <ClInclude Include="IndicatorEverywhere.h">
+      <Filter>Indicators</Filter>
+    </ClInclude>
+    <ClInclude Include="IndicatorNowhere.h">
+      <Filter>Indicators</Filter>
+    </ClInclude>
+    <ClInclude Include="Indicator.h">
+      <Filter>Indicators</Filter>
+    </ClInclude>
+    <ClInclude Include="Timestep.h">
+      <Filter>Timesteps</Filter>
+    </ClInclude>
+    <ClInclude Include="TimestepEuler.h">
+      <Filter>Timesteps</Filter>
+    </ClInclude>
+    <ClInclude Include="TimestepRK2.h">
+      <Filter>Timesteps</Filter>
+    </ClInclude>
+    <ClInclude Include="TimestepRK2TVD.h">
+      <Filter>Timesteps</Filter>
+    </ClInclude>
+    <ClInclude Include="defs.h">
+      <Filter>KERNEL</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh1D.h">
+      <Filter>KERNEL</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundaryWall.h">
+      <Filter>Boundaries</Filter>
+    </ClInclude>
+    <ClInclude Include="Params.h">
+      <Filter>PARAMS</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundarySoft.h">
+      <Filter>Boundaries</Filter>
+    </ClInclude>
+    <ClInclude Include="Problem.h">
+      <Filter>Problems</Filter>
+    </ClInclude>
+    <ClInclude Include="ProblemGas1D.h">
+      <Filter>Problems</Filter>
+    </ClInclude>
+    <ClInclude Include="ProblemTransfer1D.h">
+      <Filter>Problems</Filter>
+    </ClInclude>
+    <ClInclude Include="TimestepRK3TVD.h">
+      <Filter>Timesteps</Filter>
+    </ClInclude>
+    <ClInclude Include="Integrator.h">
+      <Filter>KERNEL</Filter>
+    </ClInclude>
+    <ClInclude Include="IndicatorKrivodonova.h">
+      <Filter>Indicators</Filter>
+    </ClInclude>
+    <ClInclude Include="LimiterWENO.h">
+      <Filter>Limiters</Filter>
+    </ClInclude>
+    <ClInclude Include="LimiterWENO_S.h">
+      <Filter>Limiters</Filter>
+    </ClInclude>
+    <ClInclude Include="FluxLaxFriedrichs.h">
+      <Filter>Fluxes</Filter>
+    </ClInclude>
+    <ClInclude Include="LimiterHWENO_SC.h">
+      <Filter>Limiters</Filter>
+    </ClInclude>
+    <ClInclude Include="LimiterHWENO_SC_Char.h">
+      <Filter>Limiters</Filter>
+    </ClInclude>
+    <ClInclude Include="ProblemMHD1D.h">
+      <Filter>Problems</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Boundaries">
+      <UniqueIdentifier>{5cd6f91f-32a4-447c-a7e1-53e3b62ad4e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fluxes">
+      <UniqueIdentifier>{34f9d669-89ae-46e8-9df1-906fbe5ca666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Indicators">
+      <UniqueIdentifier>{e8b0ca2e-b75c-42fb-aad2-0e634d12971c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Limiters">
+      <UniqueIdentifier>{6362a737-fe1b-45f7-84b3-68fd9f438110}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Timesteps">
+      <UniqueIdentifier>{b3779026-258f-4dab-9c12-e5efda7431dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="KERNEL">
+      <UniqueIdentifier>{3e1210b7-a265-4504-a2fc-c54dd9cb854f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PARAMS">
+      <UniqueIdentifier>{92bd09c9-1644-4627-b21b-7b587bd810d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Problems">
+      <UniqueIdentifier>{91db6c46-4a98-4493-aa75-43e48b466d71}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{04270227-9229-4B01-8E64-5836D9CC880B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>RKDG1D</RootNamespace>
+    <ProjectName>RKDG-1D - studio2013</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <Profile>true</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Boundary.h" />
+    <ClInclude Include="BoundarySoft.h" />
+    <ClInclude Include="BoundaryWall.h" />
+    <ClInclude Include="defs.h" />
+    <ClInclude Include="Flux.h" />
+    <ClInclude Include="FluxGodunovType.h" />
+    <ClInclude Include="FluxHLLC.h" />
+    <ClInclude Include="FluxLaxFriedrichs.h" />
+    <ClInclude Include="IndicatorEverywhere.h" />
+    <ClInclude Include="Indicator.h" />
+    <ClInclude Include="IndicatorKrivodonova.h" />
+    <ClInclude Include="IndicatorNowhere.h" />
+    <ClInclude Include="Integrator.h" />
+    <ClInclude Include="LimiterFinDiff.h" />
+    <ClInclude Include="Limiter.h" />
+    <ClInclude Include="LimiterHWENO_SC.h" />
+    <ClInclude Include="LimiterHWENO_SC_Char.h" />
+    <ClInclude Include="LimiterWENO.h" />
+    <ClInclude Include="LimiterWENO_S.h" />
+    <ClInclude Include="Mesh1D.h" />
+    <ClInclude Include="Params.h" />
+    <ClInclude Include="BoundaryPeriodic.h" />
+    <ClInclude Include="Problem.h" />
+    <ClInclude Include="ProblemGas1D.h" />
+    <ClInclude Include="ProblemMHD1D.h" />
+    <ClInclude Include="ProblemTransfer1D.h" />
+    <ClInclude Include="TimestepEuler.h" />
+    <ClInclude Include="TimestepRK2.h" />
+    <ClInclude Include="TimestepRK2TVD.h" />
+    <ClInclude Include="Timestep.h" />
+    <ClInclude Include="TimestepRK3TVD.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Boundary.cpp" />
+    <ClCompile Include="BoundarySoft.cpp" />
+    <ClCompile Include="BoundaryWall.cpp" />
+    <ClCompile Include="defs.cpp" />
+    <ClCompile Include="Flux.cpp" />
+    <ClCompile Include="FluxGodunovType.cpp" />
+    <ClCompile Include="FluxHLLC.cpp" />
+    <ClCompile Include="FluxLaxFriedrichs.cpp" />
+    <ClCompile Include="IndicatorEverywhere.cpp" />
+    <ClCompile Include="Indicator.cpp" />
+    <ClCompile Include="IndicatorKrivodonova.cpp" />
+    <ClCompile Include="IndicatorNowhere.cpp" />
+    <ClCompile Include="LimiterFinDiff.cpp" />
+    <ClCompile Include="Limiter.cpp" />
+    <ClCompile Include="LimiterHWENO_SC.cpp" />
+    <ClCompile Include="LimiterHWENO_SC_Char.cpp" />
+    <ClCompile Include="LimiterWENO.cpp" />
+    <ClCompile Include="LimiterWENO_S.cpp" />
+    <ClCompile Include="Mesh1D.cpp" />
+    <ClCompile Include="Params.cpp" />
+    <ClCompile Include="BoundaryPeriodic.cpp" />
+    <ClCompile Include="Problem.cpp" />
+    <ClCompile Include="ProblemGas1D.cpp" />
+    <ClCompile Include="ProblemMHD1D.cpp" />
+    <ClCompile Include="ProblemTransfer1D.cpp" />
+    <ClCompile Include="RKDG-1D.cpp" />
+    <ClCompile Include="TimestepEuler.cpp" />
+    <ClCompile Include="TimestepRK2.cpp" />
+    <ClCompile Include="TimestepRK2TVD.cpp" />
+    <ClCompile Include="Timestep.cpp" />
+    <ClCompile Include="TimestepRK3TVD.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
